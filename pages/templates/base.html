@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<?php 
+require 'areaAdmin/connect.php';
+require 'functions/functions.php';
+
+?>
+<html>
+
+<head>
+	<title>Bois Sacre</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta shortcut = "">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:300,400,600" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+	<header class="navHead">
+
+		<h3>Bois Sacre</h3>
+		<nav>
+			<a href="{% url 'home' %}"> Home</a>
+			<a href= "{% url 'contactUs' %}" >Catalog</a>
+			<a href="shopping cart.php">Shopping Cart</a>
+			<a href="areaAdmin/admin.php">My admin</a>
+		</nav>
+		<div class= "texPhoto">
+			<h2>BOIS SACRE</h2>
+			<h4>Africa at your fingertips</h4>
+			
+		</div>
+	</header>
+
+{% block content %}
+
+
+
+
+
+
+{% endblock content %}
+	
+	<footer>
+
+		<div class="lienDeBas1">	
+			<h4><a href="contact us.php">Contact us</a></h4>
+			<h4><a href="CGU.php">Condition utilisation</a></h4>
+			<h4><a href="payment.php">Payment</a></h4>
+			<h4><a href="shipping.php">Shipping</a></h4>
+	    </div>
+		<div class="lienDeBas2">
+			<h4>About us</h4>
+			<h5><strong>Bois Sacre</strong> is your store of various African products. We help make you feel good about life.</h5>
+
+		</div>
+		<div class="lienDeBas3">
+			<form>
+				<h4><label for="email">Newsletters</label></h4>
+				<div class="btnSub">
+					<input type="email" name="email" placeholder="contact@boisacre.com" id="email">
+					<input type="submit"   value=" Subscribe">
+				</div>
+			</form>
+		</div>
+		
+	</footer>
+
+
+
+</body>
+
+
+</html>
