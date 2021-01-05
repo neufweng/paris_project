@@ -1,0 +1,5 @@
+venv
+pipenv
+staticfiles
+.env
+*.pyc

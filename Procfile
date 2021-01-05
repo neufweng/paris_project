@@ -1,0 +1,1 @@
+web: gunicorn paris_project.wsgi --log-file -
